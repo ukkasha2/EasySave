@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+  color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+nav .logo .first-half-logo {
+  color: rgb(131, 42, 233);
+}
+nav .logo .last-half-logo {
+  color: rgb(61, 56, 61);
+}
+nav .user-opt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+nav .user-opt img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}/*# sourceMappingURL=dashboard.css.map */
