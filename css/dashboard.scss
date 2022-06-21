@@ -9,35 +9,56 @@ body {
     color: rgb(0, 0, 0);
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
 }
 
-nav {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    .logo {
-        font-size: 1.5rem;
-        font-weight: 800;
-        letter-spacing: .1rem;
-        .first-half-logo {
-            color: rgb(131, 42, 233);
-        }
-        .last-half-logo {
-            color: rgb(61, 56, 61);
-        }
-    }
-    .user-opt {
+.side-bar {
+    background-color: rgb(131, 42, 233);
+    flex: 1;
+}
+
+.main-content {
+    flex: 5;
+    nav {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: .5rem;
-        img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
+        padding: 1rem;
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: .1rem;
+            .first-half-logo {
+                color: rgb(131, 42, 233);
+            }
+            .last-half-logo {
+                color: rgb(61, 56, 61);
+            }
         }
+        .user-opt {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: .5rem;
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .account-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: linear-gradient(to right,rgb(131, 42, 233), rgb(167, 104, 240), rgb(166, 120, 219));
+        width: 99%;
+        height: 140px;
+        margin: .5rem auto;
+        border-radius: 10px;
     }
 }

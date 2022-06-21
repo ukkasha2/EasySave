@@ -9,9 +9,19 @@ body {
   color: rgb(0, 0, 0);
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
-nav {
+.side-bar {
+  background-color: rgb(131, 42, 233);
+  flex: 1;
+}
+
+.main-content {
+  flex: 5;
+}
+.main-content nav {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   display: flex;
@@ -19,25 +29,35 @@ nav {
   align-items: center;
   padding: 1rem;
 }
-nav .logo {
+.main-content nav .logo {
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: 0.1rem;
 }
-nav .logo .first-half-logo {
+.main-content nav .logo .first-half-logo {
   color: rgb(131, 42, 233);
 }
-nav .logo .last-half-logo {
+.main-content nav .logo .last-half-logo {
   color: rgb(61, 56, 61);
 }
-nav .user-opt {
+.main-content nav .user-opt {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
 }
-nav .user-opt img {
+.main-content nav .user-opt img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+.main-content .account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(131, 42, 233), rgb(167, 104, 240), rgb(166, 120, 219));
+  width: 99%;
+  height: 140px;
+  margin: 0.5rem auto;
+  border-radius: 10px;
 }/*# sourceMappingURL=dashboard.css.map */
