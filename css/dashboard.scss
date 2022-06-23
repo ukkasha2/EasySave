@@ -11,11 +11,11 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    // align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .side-bar {
-    background-color: rgb(131, 42, 233);
+    background-color: rgb(34, 49, 134);
     flex: 1;
 }
 
@@ -55,10 +55,165 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-image: linear-gradient(to right,rgb(131, 42, 233), rgb(167, 104, 240), rgb(166, 120, 219));
+        background-image: linear-gradient(to right,rgb(2, 137, 248), rgb(111, 120, 250));
         width: 99%;
-        height: 140px;
         margin: .5rem auto;
         border-radius: 10px;
+        padding: 1rem 2rem;
+        .user-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            img {
+                width: 100px;
+                height: 100px;
+                border: 2px solid rgb(255, 255, 255);
+                border-radius: 50%;
+                padding: 2px;
+            }
+        }
+        .account-detail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: .5rem;
+        }
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .title {
+            color: rgb(235, 235, 235);
+            font-weight: 500;
+        }
+        .money {
+            font-size: 1.5rem;
+        }
+    }
+    .account-history {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: .7rem;
+        margin: 2rem 1rem;
+        .transactions-panel {
+            background-color: rgb(255, 255, 255);
+            padding: .5rem;
+            grid-column: span 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 5px;
+            .title {
+                color: rgb(37, 36, 36);
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 1rem;
+                border-bottom: 1px solid rgb(235, 233, 233);
+                span {
+                    padding: .1rem;
+                    font-size: .8rem;
+                    :first-child {
+                        color: rgb(13, 212, 29);
+                    }
+                    :last-child {
+                        color: rgb(228, 18, 18);
+                    }
+                }
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                padding: .5rem;
+                :last-child {
+                    border: none;
+                }
+                th {
+                    color: rgb(109, 101, 101);
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                    padding: 1rem;
+                    border-bottom: 1px solid rgb(235, 233, 233);
+                }
+                td {
+                    padding: 1rem;
+                }
+                tr {
+                    border-bottom: 1px solid rgb(235, 233, 233);
+                    .narration {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+                        :first-child {
+                            color: rgb(0, 0, 0);
+                            font-size: 1rem;
+                            font-weight: 600;
+                        }
+                        :last-child {
+                            color: rgb(122, 117, 117);
+                            font-size: .9rem;
+                        }
+                    }
+                }
+            }
+        }
+        .transactions-history {
+            background-color: rgb(255, 255, 255);
+            padding: .5rem;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            .title {
+                color: rgb(37, 36, 36);
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 1rem;
+                border-bottom: 1px solid rgb(235, 233, 233);
+                span {
+                    padding: .1rem;
+                    font-size: .8rem;
+                    :first-child {
+                        color: rgb(13, 212, 29);
+                    }
+                    :last-child {
+                        color: rgb(228, 18, 18);
+                    }
+                }
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: .7rem;
+                padding: 1rem;
+                border-bottom: 1px solid rgb(235, 233, 233);
+                :first-child {
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                    span {
+                        color: red;
+                    }
+                }
+                :last-child {
+                    font-size: 1.3rem;
+                }
+                #in {
+                    color: rgb(13, 212, 29);
+                }
+                #out {
+                    color: rgb(228, 18, 18);
+                }
+            }
+        }
+    }
+}
+
+.head-title {
+    margin: .7rem;
+    h1 {
+        color: rgb(109, 101, 101);
+        font-size: 1.2rem;
     }
 }

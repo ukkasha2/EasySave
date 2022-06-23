@@ -11,10 +11,11 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .side-bar {
-  background-color: rgb(131, 42, 233);
+  background-color: rgb(34, 49, 134);
   flex: 1;
 }
 
@@ -55,9 +56,164 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to right, rgb(131, 42, 233), rgb(167, 104, 240), rgb(166, 120, 219));
+  background-image: linear-gradient(to right, rgb(2, 137, 248), rgb(111, 120, 250));
   width: 99%;
-  height: 140px;
   margin: 0.5rem auto;
   border-radius: 10px;
+  padding: 1rem 2rem;
+}
+.main-content .account-header .user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.main-content .account-header .user-info img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 2px;
+}
+.main-content .account-header .account-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.main-content .account-header h1 {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.main-content .account-header .title {
+  color: rgb(235, 235, 235);
+  font-weight: 500;
+}
+.main-content .account-header .money {
+  font-size: 1.5rem;
+}
+.main-content .account-history {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 0.7rem;
+  margin: 2rem 1rem;
+}
+.main-content .account-history .transactions-panel {
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+.main-content .account-history .transactions-panel .title {
+  color: rgb(37, 36, 36);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+.main-content .account-history .transactions-panel .title span {
+  padding: 0.1rem;
+  font-size: 0.8rem;
+}
+.main-content .account-history .transactions-panel .title span :first-child {
+  color: rgb(13, 212, 29);
+}
+.main-content .account-history .transactions-panel .title span :last-child {
+  color: rgb(228, 18, 18);
+}
+.main-content .account-history .transactions-panel table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 0.5rem;
+}
+.main-content .account-history .transactions-panel table :last-child {
+  border: none;
+}
+.main-content .account-history .transactions-panel table th {
+  color: rgb(109, 101, 101);
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+.main-content .account-history .transactions-panel table td {
+  padding: 1rem;
+}
+.main-content .account-history .transactions-panel table tr {
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+.main-content .account-history .transactions-panel table tr .narration {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.main-content .account-history .transactions-panel table tr .narration :first-child {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.main-content .account-history .transactions-panel table tr .narration :last-child {
+  color: rgb(122, 117, 117);
+  font-size: 0.9rem;
+}
+.main-content .account-history .transactions-history {
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.main-content .account-history .transactions-history .title {
+  color: rgb(37, 36, 36);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+.main-content .account-history .transactions-history .title span {
+  padding: 0.1rem;
+  font-size: 0.8rem;
+}
+.main-content .account-history .transactions-history .title span :first-child {
+  color: rgb(13, 212, 29);
+}
+.main-content .account-history .transactions-history .title span :last-child {
+  color: rgb(228, 18, 18);
+}
+.main-content .account-history .transactions-history div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+.main-content .account-history .transactions-history div :first-child {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.main-content .account-history .transactions-history div :first-child span {
+  color: red;
+}
+.main-content .account-history .transactions-history div :last-child {
+  font-size: 1.3rem;
+}
+.main-content .account-history .transactions-history div #in {
+  color: rgb(13, 212, 29);
+}
+.main-content .account-history .transactions-history div #out {
+  color: rgb(228, 18, 18);
+}
+
+.head-title {
+  margin: 0.7rem;
+}
+.head-title h1 {
+  color: rgb(109, 101, 101);
+  font-size: 1.2rem;
 }/*# sourceMappingURL=dashboard.css.map */
