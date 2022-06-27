@@ -1,0 +1,61 @@
+@media screen and (max-width: 767px) {
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        .user-opt {
+            display: none !important;
+        }
+        .hamburger {
+            display: block !important;
+        }
+    }
+
+    .container {
+        padding-top: 5rem;
+        .side-bar {
+            display: none !important;
+        }
+        .main-content {
+            .account-header {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr);
+                padding: .5rem;
+                margin: .5rem .3rem;
+                grid-gap: 1.5rem;
+                font-size: 1rem;
+                .user-info {
+                    grid-column: span 2;
+                    display: flex;
+                    flex-direction: column;
+                }
+                :nth-child(2) {
+                    grid-column: span 2;
+                }
+            }
+            .account-history {
+                display: flex !important;
+                flex-direction: column;
+                margin: .5rem .3rem;
+                .transactions-history {
+                    display: grid !important;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 1rem;
+                    div {
+                        margin: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .total-transactions {
+                        grid-column: span 2;
+                    }
+                }
+            }
+            .money {
+                font-size: 1.3rem !important;
+            }
+        }
+    }
+    
+}

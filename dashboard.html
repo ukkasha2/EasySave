@@ -9,107 +9,124 @@
     <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css">
 </head>
 <body>
-    <section class="side-bar">
-
-    </section>
-    <section class="main-content">
-        <nav>
-            <div class="logo">
-               <span class="first-half-logo">Oksea</span><span class="last-half-logo">Save</span>
-            </div>
-            <div class="user-opt">
-                <img src="assets/images/profile_pics/whix.jpg" alt="Profile Photo"><span><i class="fa fa-1x fa-angle-down"></i></span>
-            </div>
-        </nav>
-        <div class="head-title">
-            <h1>Account Summary</h1>
+    <nav>
+        <div class="logo">
+           <span class="first-half-logo">Oksea</span><span class="last-half-logo">Save</span>
         </div>
-        <div class="account-header">
-            <div class="user-info">
-                <img src="assets/images/profile_pics/whix.jpg" alt="Profile Photo">
+        <div class="user-opt">
+            <img src="assets/images/profile_pics/whix.jpg" alt="Profile Photo"><span><i class="fa fa-1x fa-angle-down"></i></span>
+        </div>
+        <div class="hamburger">
+            <span><i class="fa fa-bars"></i></span>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="side-bar">
+            <div class="menu-text">
+                <span><i class="fa fa-bars"></i></span>
+                <span>Dashboard</span>
+            </div>
+            <ul class="menu-items">
+                <li class="title">Transactions</li>
+                <li><i class="fa fa-calculator"></i><a href="#">Account Summary</a></li>
+                <li><i class="fa fa-money-bill"></i><a href="#">Deposit</a></li>
+                <li><i class="fa fa-money-bill-wave"></i><a href="#">Withdraw</a></li>
+                <li class="title">Services</li>
+                <li><i class="fa fa-dollar-sign"></i><a href="#">Savings Plan</a></li>
+                <li><i class="fa fa-money-check"></i><a href="#">Loan</a></li>
+            </ul>
+        </section>
+        <section class="main-content">
+            <div class="head-title">
+                <h1>Account Summary</h1>
+            </div>
+            <div class="account-header">
+                <div class="user-info">
+                    <img src="assets/images/profile_pics/whix.jpg" alt="Profile Photo">
+                    <div class="account-detail">
+                        <h1 class="title">Account Name</h1>
+                        <h1>Halilu Ibrahim</h1>
+                    </div>
+                </div>
                 <div class="account-detail">
-                    <h1 class="title">Account Name</h1>
-                    <h1>Halilu Ibrahim</h1>
+                    <h1 class="title">Account ID</h1>
+                    <h1>ESV-2198272132</h1>
+                </div>
+                <div class="account-detail">
+                    <h1 class="title">Account Balance</h1>
+                    <h1 class="money">N223,000</h1>
+                </div>
+                <div class="account-detail">
+                    <h1 class="title">Loan Balance</h1>
+                    <h1 class="money">N23,500</h1>
                 </div>
             </div>
-            <div class="account-detail">
-                <h1 class="title">Account ID</h1>
-                <h1>ESV-2198272132</h1>
-            </div>
-            <div class="account-detail">
-                <h1 class="title">Account Balance</h1>
-                <h1 class="money">N223,000</h1>
-            </div>
-            <div class="account-detail">
-                <h1 class="title">Loan Balance</h1>
-                <h1 class="money">N23,500</h1>
-            </div>
-        </div>
-        <div class="account-history">
-            <div class="transactions-panel">
-                <h1 class="title"> <span><i class="fa fa-arrow-up"></i><i class="fa fa-arrow-down"></i></span> Recent Transactions</h1>
-                <table>
-                    <tr>
-                        <th>Narration</th>
-                        <th>Type</th>
-                        <th>Date</th>
-                        <th>Amount</th>
-                    </tr>
-                    <tr>
-                        <td class="narration">
-                            <h1>Withdrawal to Zenith Bank</h1>
-                            <h1>Ref-No 13438493725</h1>
-                        </td>
-                        <td>Withdrawal</td>
-                        <td>22-06-2022</td>
-                        <td>N12,000</td>
-                    </tr>
-                    <tr>
-                        <td class="narration">
-                            <h1>Deposit from GT Bank</h1>
-                            <h1>Ref-No 13438493725</h1>
-                        </td>
-                        <td>Deposit</td>
-                        <td>22-06-2022</td>
-                        <td>N15,000</td>
-                    </tr>
-                    <tr>
-                        <td class="narration">
-                            <h1>Withdrawal to GT Bank</h1>
-                            <h1>Ref-No 13438493725</h1>
-                        </td>
-                        <td>Withdrawal</td>
-                        <td>22-06-2022</td>
-                        <td>N19,000</td>
-                    </tr>
-                    <tr>
-                        <td class="narration">
-                            <h1>Deposit from GT Bank</h1>
-                            <h1>Ref-No 13438493725</h1>
-                        </td>
-                        <td>Deposit</td>
-                        <td>22-06-2022</td>
-                        <td>N20,000</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="transactions-history">
-                <h1 class="title"> <span><i class="fa fa-arrow-up"></i><i class="fa fa-arrow-down"></i></span> Transactions</h1>
-                <br>
-                <div class="incoming-transactions">
-                    <h1>Incoming</h1>
-                    <h1 id="in">N650,000</h1>
+            <div class="account-history">
+                <div class="transactions-panel">
+                    <h1 class="title"> <span><i class="fa fa-arrow-up"></i><i class="fa fa-arrow-down"></i></span> Recent Transactions</h1>
+                    <table>
+                        <tr>
+                            <th>Narration</th>
+                            <th>Type</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td class="narration">
+                                <h1>Withdrawal to Zenith Bank</h1>
+                                <h1>Ref-No 13438493725</h1>
+                            </td>
+                            <td>Withdrawal</td>
+                            <td>22-06-2022</td>
+                            <td>N12,000</td>
+                        </tr>
+                        <tr>
+                            <td class="narration">
+                                <h1>Deposit from GT Bank</h1>
+                                <h1>Ref-No 13438493725</h1>
+                            </td>
+                            <td>Deposit</td>
+                            <td>22-06-2022</td>
+                            <td>N15,000</td>
+                        </tr>
+                        <tr>
+                            <td class="narration">
+                                <h1>Withdrawal to GT Bank</h1>
+                                <h1>Ref-No 13438493725</h1>
+                            </td>
+                            <td>Withdrawal</td>
+                            <td>22-06-2022</td>
+                            <td>N19,000</td>
+                        </tr>
+                        <tr>
+                            <td class="narration">
+                                <h1>Deposit from GT Bank</h1>
+                                <h1>Ref-No 13438493725</h1>
+                            </td>
+                            <td>Deposit</td>
+                            <td>22-06-2022</td>
+                            <td>N20,000</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="outgoing-transactions">
-                    <h1>Outgoing</h1>
-                    <h1 id="out">N340,000</h1>
-                </div>
-                <div class="total-transactions">
-                    <h1>Total</h1>
-                    <h1>N340,000</h1>
+                <div class="transactions-history">
+                    <h1 class="title"> <span><i class="fa fa-arrow-up"></i><i class="fa fa-arrow-down"></i></span> Transactions</h1>
+                    <br>
+                    <div class="incoming-transactions">
+                        <h1>Incoming</h1>
+                        <h1 id="in">N650,000</h1>
+                    </div>
+                    <div class="outgoing-transactions">
+                        <h1>Outgoing</h1>
+                        <h1 id="out">N340,000</h1>
+                    </div>
+                    <div class="total-transactions">
+                        <h1>Total</h1>
+                        <h1>N340,000</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </body>
 </html>

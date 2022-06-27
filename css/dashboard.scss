@@ -1,3 +1,5 @@
+@import '_media';
+
 * {
     margin: 0;
     padding: 0;
@@ -7,57 +9,113 @@
 body {
     background-color: rgb(235, 235, 235);
     color: rgb(0, 0, 0);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.side-bar {
-    background-color: rgb(34, 49, 134);
-    flex: 1;
-}
-
-.main-content {
-    flex: 5;
-    nav {
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
+nav {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: .1rem;
+        .first-half-logo {
+            color: rgb(131, 42, 233);
+        }
+        .last-half-logo {
+            color: rgb(61, 56, 61);
+        }
+    }
+    .user-opt {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem;
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            letter-spacing: .1rem;
-            .first-half-logo {
-                color: rgb(131, 42, 233);
-            }
-            .last-half-logo {
-                color: rgb(61, 56, 61);
-            }
+        gap: .5rem;
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
         }
-        .user-opt {
+    }
+    .hamburger {
+        display: none;
+        i {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(34, 49, 134);
+    padding: 4rem 0 4rem 1rem;
+    .menu-text {
+        display: flex;
+        gap: .5rem;
+        color: rgb(245, 244, 244);
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 4px;
+        border-bottom: 1px solid rgb(81, 70, 128);
+        padding-bottom: 1rem;
+    }
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+        text-align: left;
+        width: 100%;
+        padding: 2rem .5rem;
+        li {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            gap: .5rem;
-            img {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
+            gap: 2px;
+            padding: .5rem 0;
+            width: 100%;
+            &.title {
+                font-weight: 500;
+                letter-spacing: .2rem;
+                color: rgb(180, 179, 179);
+                border-bottom: 1px solid rgb(128, 128, 128);
+                padding: 1rem 0;
+            }
+            i {
+                width: 25px;
+                color: rgb(255, 255, 255);
+            }
+            a {
+                padding: 1rem .5rem;
+                color: rgb(235, 233, 233);
+                text-decoration: none;
+                width: 100%;
+                &:hover {
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(34, 49, 134);
+                }
             }
         }
     }
+}
+
+.main-content {
+    grid-column: span 5;
     .account-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-image: linear-gradient(to right,rgb(2, 137, 248), rgb(111, 120, 250));
-        width: 99%;
-        margin: .5rem auto;
+        margin: .5rem;
         border-radius: 10px;
         padding: 1rem 2rem;
         .user-info {
@@ -97,7 +155,7 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-gap: .7rem;
-        margin: 2rem 1rem;
+        margin: 1rem;
         .transactions-panel {
             background-color: rgb(255, 255, 255);
             padding: .5rem;
@@ -217,3 +275,4 @@ body {
         font-size: 1.2rem;
     }
 }
+
