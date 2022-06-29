@@ -1,4 +1,9 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     nav {
         position: fixed;
         top: 0;
@@ -37,6 +42,11 @@
                 display: flex !important;
                 flex-direction: column;
                 margin: .5rem .3rem;
+                .transactions-panel {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    overflow: hidden;
+                }
                 .transactions-history {
                     display: grid !important;
                     grid-template-columns: repeat(2, 1fr);

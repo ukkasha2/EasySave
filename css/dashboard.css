@@ -1,4 +1,10 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   nav {
     position: fixed;
     top: 0;
@@ -37,6 +43,11 @@
     display: flex !important;
     flex-direction: column;
     margin: 0.5rem 0.3rem;
+  }
+  .container .main-content .account-history .transactions-panel {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
   }
   .container .main-content .account-history .transactions-history {
     display: grid !important;
