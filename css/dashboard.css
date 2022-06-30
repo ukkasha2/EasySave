@@ -49,23 +49,6 @@
     grid-template-columns: repeat(1, 1fr);
     overflow: hidden;
   }
-  .container .main-content .account-history .transactions-panel table tr .narration .date {
-    width: 40px;
-    height: 40px;
-  }
-  .container .main-content .account-history .transactions-panel table tr .narration .date :first-child {
-    font-size: 0.6rem;
-  }
-  .container .main-content .account-history .transactions-panel table tr .narration .date :last-child {
-    font-size: 0.9rem;
-  }
-  .container .main-content .account-history .transactions-panel table tr .narration .info :first-child {
-    font-size: 1rem;
-  }
-  .container .main-content .account-history .transactions-panel table tr .narration .info :last-child {
-    font-size: 0.8rem;
-    padding-right: 1rem;
-  }
   .container .main-content .account-history .transactions-history {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
