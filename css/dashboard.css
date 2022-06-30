@@ -49,6 +49,12 @@
     grid-template-columns: repeat(1, 1fr);
     overflow: hidden;
   }
+  .container .main-content .account-history .transactions-panel table tr .date {
+    margin-right: -0.9rem !important;
+  }
+  .container .main-content .account-history .transactions-panel table tr .narration .info :first-child {
+    font-size: 0.9rem !important;
+  }
   .container .main-content .account-history .transactions-history {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
@@ -273,27 +279,33 @@ nav .hamburger i {
 .main-content .account-history .transactions-panel table tr {
   border-bottom: 1px solid rgb(235, 233, 233);
 }
+.main-content .account-history .transactions-panel table tr .date {
+  background-color: rgb(131, 42, 233);
+  color: rgb(255, 255, 255);
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  margin-right: -2rem;
+}
+.main-content .account-history .transactions-panel table tr .date :first-child {
+  font-size: 0.9rem;
+}
+.main-content .account-history .transactions-panel table tr .date :last-child {
+  font-size: 1rem;
+}
 .main-content .account-history .transactions-panel table tr .narration {
   display: flex;
   gap: 0.7rem;
-}
-.main-content .account-history .transactions-panel table tr .narration .date {
-  background-color: rgb(131, 42, 233);
-  color: rgb(255, 255, 255);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-}
-.main-content .account-history .transactions-panel table tr .narration .date :first-child {
-  font-size: 0.8rem;
-}
-.main-content .account-history .transactions-panel table tr .narration .date :last-child {
-  font-size: 1rem;
 }
 .main-content .account-history .transactions-panel table tr .narration .info {
   display: flex;

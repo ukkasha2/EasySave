@@ -46,31 +46,20 @@
                     display: grid;
                     grid-template-columns: repeat(1, 1fr);
                     overflow: hidden;
-                    // table {
-                    //     tr {
-                    //         .narration {
-                    //             .date {
-                    //                 width: 40px;
-                    //                 height: 40px;
-                    //                 :first-child {
-                    //                     font-size: .6rem;
-                    //                 }
-                    //                 :last-child {
-                    //                     font-size: .9rem;
-                    //                 }
-                    //             }
-                    //             .info {
-                    //                 :first-child {
-                    //                     font-size: 1rem;
-                    //                 }
-                    //                 :last-child {
-                    //                     font-size: .8rem;
-                    //                     padding-right: 1rem;
-                    //                 }
-                    //             }
-                    //         }
-                    //     }
-                    // }
+                    table {
+                        tr {
+                            .date {
+                                margin-right: -.9rem !important;
+                            }
+                            .narration {
+                                .info {
+                                    :first-child {
+                                        font-size: .9rem !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
                 .transactions-history {
                     display: grid !important;
