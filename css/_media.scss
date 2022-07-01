@@ -11,7 +11,7 @@
         .user-opt {
             display: none !important;
         }
-        .hamburger {
+        .harmburger {
             display: block !important;
         }
     }
@@ -22,6 +22,7 @@
             display: none !important;
         }
         .main-content {
+            margin: -.5rem -1px;
             .account-header {
                 display: grid !important;
                 grid-template-columns: repeat(2, 1fr);
@@ -50,6 +51,8 @@
                         tr {
                             .date {
                                 margin-right: -.9rem !important;
+                                padding-left: .9rem;
+                                padding-right: .9rem;
                             }
                             .narration {
                                 .info {

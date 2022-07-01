@@ -19,6 +19,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
     .logo {
         font-size: 1.5rem;
         font-weight: 800;
@@ -41,7 +45,7 @@ nav {
             border-radius: 50%;
         }
     }
-    .hamburger {
+    .harmburger {
         display: none;
         i {
             font-size: 1.5rem;
@@ -49,9 +53,36 @@ nav {
     }
 }
 
+.harmburger-menu {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 0;
+    right: 0;
+    margin: 0 auto;
+    float: right;
+    overflow-x: hidden;
+    z-index: 1;
+    transition: 0.6s;
+    border-top: 1px solid rgb(235, 233, 233);
+    a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        padding: 1rem;
+        border-bottom: 1px solid rgb(235, 233, 233);
+        &:hover {
+            background-color: rgb(2, 137, 248);
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding-top: 4.6rem;
 }
 
 .side-bar {
@@ -59,6 +90,8 @@ nav {
     flex-direction: column;
     background-color: rgb(34, 49, 134);
     padding: 4rem 0 4rem 1rem;
+    position: fixed;
+    height: 100vh;
     .menu-text {
         display: flex;
         gap: .5rem;
@@ -109,6 +142,7 @@ nav {
 }
 
 .main-content {
+    margin-left: 13rem;
     grid-column: span 5;
     .account-header {
         display: flex;
@@ -197,7 +231,7 @@ nav {
                     border-bottom: 1px solid rgb(235, 233, 233);
                 }
                 td {
-                    padding: 1rem;
+                    padding: .7rem;
                 }
                 tr {
                     border-bottom: 1px solid rgb(235, 233, 233);
@@ -215,7 +249,9 @@ nav {
                         border-radius: 50%;
                         margin-right: -2rem;
                         :first-child {
-                            font-size: .9rem;
+                            color: rgb(245, 244, 244);
+                            font-weight: 500;
+                            font-size: .7rem;
                         }
                         :last-child {
                             font-size: 1rem;

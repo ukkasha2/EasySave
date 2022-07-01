@@ -13,7 +13,7 @@
   nav .user-opt {
     display: none !important;
   }
-  nav .hamburger {
+  nav .harmburger {
     display: block !important;
   }
 
@@ -22,6 +22,9 @@
   }
   .container .side-bar {
     display: none !important;
+  }
+  .container .main-content {
+    margin: -0.5rem -1px;
   }
   .container .main-content .account-header {
     display: grid !important;
@@ -51,6 +54,8 @@
   }
   .container .main-content .account-history .transactions-panel table tr .date {
     margin-right: -0.9rem !important;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
   }
   .container .main-content .account-history .transactions-panel table tr .narration .info :first-child {
     font-size: 0.9rem !important;
@@ -92,6 +97,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 nav .logo {
   font-size: 1.5rem;
@@ -115,16 +125,43 @@ nav .user-opt img {
   height: 40px;
   border-radius: 50%;
 }
-nav .hamburger {
+nav .harmburger {
   display: none;
 }
-nav .hamburger i {
+nav .harmburger i {
   font-size: 1.5rem;
+}
+
+.harmburger-menu {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 0;
+  right: 0;
+  margin: 0 auto;
+  float: right;
+  overflow-x: hidden;
+  z-index: 1;
+  transition: 0.6s;
+  border-top: 1px solid rgb(235, 233, 233);
+}
+.harmburger-menu a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+.harmburger-menu a:hover {
+  background-color: rgb(2, 137, 248);
+  color: rgb(255, 255, 255);
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding-top: 4.6rem;
 }
 
 .side-bar {
@@ -132,6 +169,8 @@ nav .hamburger i {
   flex-direction: column;
   background-color: rgb(34, 49, 134);
   padding: 4rem 0 4rem 1rem;
+  position: fixed;
+  height: 100vh;
 }
 .side-bar .menu-text {
   display: flex;
@@ -182,6 +221,7 @@ nav .hamburger i {
 }
 
 .main-content {
+  margin-left: 13rem;
   grid-column: span 5;
 }
 .main-content .account-header {
@@ -274,7 +314,7 @@ nav .hamburger i {
   border-bottom: 1px solid rgb(235, 233, 233);
 }
 .main-content .account-history .transactions-panel table td {
-  padding: 1rem;
+  padding: 0.7rem;
 }
 .main-content .account-history .transactions-panel table tr {
   border-bottom: 1px solid rgb(235, 233, 233);
@@ -298,7 +338,9 @@ nav .hamburger i {
   margin-right: -2rem;
 }
 .main-content .account-history .transactions-panel table tr .date :first-child {
-  font-size: 0.9rem;
+  color: rgb(245, 244, 244);
+  font-weight: 500;
+  font-size: 0.7rem;
 }
 .main-content .account-history .transactions-panel table tr .date :last-child {
   font-size: 1rem;

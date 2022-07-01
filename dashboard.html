@@ -16,10 +16,17 @@
         <div class="user-opt">
             <img src="assets/images/profile_pics/whix.jpg" alt="Profile Photo"><span><i class="fa fa-1x fa-angle-down"></i></span>
         </div>
-        <div class="hamburger">
+        <div class="harmburger">
             <span><i class="fa fa-bars"></i></span>
         </div>
     </nav>
+    <aside class="harmburger-menu">
+        <a href="">Account Summary</a>
+        <a href="">Deposit</a>
+        <a href="">Withdraw</a>
+        <a href="">Savings Plan</a>
+        <a href="">Loan</a>
+    </aside>
     <div class="container">
         <section class="side-bar">
             <div class="menu-text">
@@ -155,5 +162,14 @@
             </div>
         </section>
     </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".harmburger").click(function(){
+                $(".harmburger-menu").css({"width":"70%"});
+                $(this).toggleClass("fa-times");
+            });
+        });
+    </script>
 </body>
 </html>
